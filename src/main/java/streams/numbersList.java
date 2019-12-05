@@ -44,6 +44,17 @@ public class numbersList {
 		}
 		return sum;
 	}
+
+	
+
+	public static List<Integer> getsquared(List<Integer> numbers) {
+		List<Integer> newList = new ArrayList<Integer>();
+		for (Integer num : numbers) {
+			int squarenum = num*num;
+				newList.add(squarenum);
+			}
+		return newList;
+	}
 	
 	
 

@@ -47,7 +47,7 @@ public class ListTest {
 		int sum = numbersList.getsum(numbers);
 		Assert.assertEquals(55, sum);
 		
-		int squaredMin = numbersList.getSquare(numbersList.getMin(numbers));
+		int squaredMin = numbersList.getMin(numbersList.getsquared(numbers));
 		Assert.assertEquals(0,squaredMin);
 	}
 
