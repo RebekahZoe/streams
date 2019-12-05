@@ -33,6 +33,17 @@ public class ListTest {
 		}
 		List<Integer> evenListActual = numbersList.getEven(numbers);
 		Assert.assertEquals(evenList, evenListActual);
+		
+		List<Integer> oddList = new ArrayList<Integer>();
+		
+		for (int i=0; i < numbers.size();i++) {
+			if( i%2 !=0) {
+			oddList.add(i);
+		}
+		}
+		List<Integer> oddListActual = numbersList.getOdd(numbers);
+		Assert.assertEquals(evenList, oddListActual);
+		
 	}
 
 }
