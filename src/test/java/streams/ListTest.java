@@ -44,6 +44,8 @@ public class ListTest {
 		List<Integer> oddListActual = numbersList.getOdd(numbers);
 		Assert.assertEquals(oddList, oddListActual);
 		
+		int sum = numbersList.getsum(numbers);
+		Assert.assertEquals(55, sum);
 	}
 
 }
