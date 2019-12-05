@@ -36,6 +36,14 @@ public class numbersList {
 		}
 		return newList;
 	}
+
+	public static int getsum(List<Integer> numbers) {
+		int sum =0;
+		for (Integer num: numbers) {
+			sum +=num;
+		}
+		return sum;
+	}
 	
 
 }
