@@ -42,7 +42,7 @@ public class ListTest {
 		}
 		}
 		List<Integer> oddListActual = numbersList.getOdd(numbers);
-		Assert.assertEquals(evenList, oddListActual);
+		Assert.assertEquals(oddList, oddListActual);
 		
 	}
 

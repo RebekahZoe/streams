@@ -26,6 +26,16 @@ public class numbersList {
 		}
 		return newList;
 	}
+
+	public static List<Integer> getOdd(List<Integer> numbers) {
+		List<Integer> newList = new ArrayList<Integer>();
+		for (Integer num : numbers) {
+			if (num %2 !=0) {
+				newList.add(num);
+			}
+		}
+		return newList;
+	}
 	
 
 }
