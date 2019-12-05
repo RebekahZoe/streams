@@ -1,5 +1,6 @@
 package streams;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,5 +16,16 @@ public class numbersList {
 		int min = Collections.min(numbers);
 		return min;
 	}
+
+	public static List<Integer> getEven(List<Integer> numbers) {
+		List<Integer> newList = new ArrayList<Integer>();
+		for (Integer num : numbers) {
+			if (num %2 ==0) {
+				newList.add(num);
+			}
+		}
+		return newList;
+	}
+	
 
 }
