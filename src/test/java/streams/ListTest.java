@@ -21,6 +21,8 @@ public class ListTest {
 		int max = numbersList.getMax(numbers);
 		Assert.assertEquals(10, max);
 		
+		int min = numbersList.getMin(numbers);
+		Assert.assertEquals(0, min);
 	}
 
 }

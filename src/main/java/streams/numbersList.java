@@ -13,4 +13,13 @@ public class numbersList {
 		return max;
 	}
 
+	public static int getMin(List<Integer> numbers) {
+		int min = 11;
+		for (int i =0; i< numbers.size();i++) {
+			
+			min = Math.min(min, i);
+		}
+		return min;
+	}
+
 }
