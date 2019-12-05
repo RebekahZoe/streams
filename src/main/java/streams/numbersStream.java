@@ -14,4 +14,12 @@ public class numbersStream {
 		return max;
 	}
 
+	public static int getMin(List<Integer> numbers) {
+		int min = numbers.stream()
+				.min(Integer::compare)
+                .get();
+		
+		return min;
+	}
+
 }

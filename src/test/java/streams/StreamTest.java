@@ -21,7 +21,7 @@ public class StreamTest {
 		Assert.assertEquals(10, max);
 		
 		int min = numbersStream.getMin(numbers);
-		Assert.assertEquals(10, min);
+		Assert.assertEquals(0, min);
 	}
 
 }
