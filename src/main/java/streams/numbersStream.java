@@ -30,4 +30,11 @@ public class numbersStream {
 		return list;
 	}
 
+	public static List<Integer> getOdd(List<Integer> numbers) {
+		List<Integer> list = numbers.stream()
+				.filter(num -> num%2 != 0)
+				.collect(Collectors.toList());
+		return list;
+	}
+
 }
