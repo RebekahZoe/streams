@@ -42,6 +42,9 @@ public class StreamTest {
 		}
 		List<Integer> oddListActual = numbersStream.getOdd(numbers);
 		Assert.assertEquals(oddList, oddListActual);
+		
+		int sum = numbersStream.getsum(numbers);
+		Assert.assertEquals(55, sum);
 	}
 
 }
