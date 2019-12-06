@@ -2,7 +2,8 @@ package streams;
 
 import java.util.List;
 import java.util.stream.*;
-import java.util.Optional; 
+import java.util.Optional;
+import java.util.Collection;
 import java.util.Comparator;
 public class numbersStream {
 
@@ -20,6 +21,13 @@ public class numbersStream {
                 .get();
 		
 		return min;
+	}
+
+	public static List<Integer> getEven(List<Integer> numbers) {
+		List<Integer> list = numbers.stream()
+							.filter(num -> num%2 == 0)
+							.collect(Collectors.toList());
+		return list;
 	}
 
 }
