@@ -44,4 +44,11 @@ public class numbersStream {
 		return sum;
 	}
 
+	public static List<Integer> getsquared(List<Integer> numbers) {
+		List<Integer> list = numbers.stream()
+				.map(num -> num*num)
+				.collect(Collectors.toList());
+		return list;
+	}
+
 }
