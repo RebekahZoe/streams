@@ -45,6 +45,9 @@ public class StreamTest {
 		
 		int sum = numbersStream.getsum(numbers);
 		Assert.assertEquals(55, sum);
+		
+		int squaredMin = numbersStream.getMin(numbersStream.getsquared(numbers));
+		Assert.assertEquals(0,squaredMin);
 	}
 
 }
