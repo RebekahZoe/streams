@@ -37,4 +37,11 @@ public class numbersStream {
 		return list;
 	}
 
+	public static int getsum(List<Integer> numbers) {
+		int sum = numbers.stream()
+				  .reduce((accumulator, current)->  (accumulator + current))
+				  .get();
+		return sum;
+	}
+
 }
